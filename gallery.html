@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header><h1>Gallery</h1></header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container gallery">
+    <img src="images/design1.jpg" onclick="enlargeImage(this)">
+    <img src="images/design2.jpg" onclick="enlargeImage(this)">
+    <img src="images/design3.jpg" onclick="enlargeImage(this)">
+</div>
+
+<!-- Modal -->
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:black;">
+    <img id="modal-img" style="width:80%; margin:50px auto; display:block;">
+    <button onclick="closeModal()">Close</button>
+</div>
+
+</body>
+</html>
