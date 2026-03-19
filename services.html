@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showService(service) {
+            let text = "";
+
+            if (service === "home") {
+                text = "We design beautiful and comfortable home interiors.";
+            } else if (service === "office") {
+                text = "Modern office designs to improve productivity.";
+            } else if (service === "furniture") {
+                text = "Custom furniture planning for your space.";
+            }
+
+            document.getElementById("service-details").innerText = text;
+        }
+    </script>
+</head>
+<body>
+
+<header><h1>Our Services</h1></header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>Click a Service</h2>
+
+    <div style="display:flex; gap:20px; flex-wrap:wrap;">
+        <div onclick="showService('home')" style="border:1px solid #ccc; padding:15px; cursor:pointer;">
+            Home Interior
+        </div>
+
+        <div onclick="showService('office')" style="border:1px solid #ccc; padding:15px; cursor:pointer;">
+            Office Design
+        </div>
+
+        <div onclick="showService('furniture')" style="border:1px solid #ccc; padding:15px; cursor:pointer;">
+            Furniture Planning
+        </div>
+    </div>
+
+    <h3 style="margin-top:20px;">Details:</h3>
+    <p id="service-details">Click a service to see details.</p>
+</div>
+
+<footer>© 2026 Interior Design</footer>
+
+</body>
+</html>
